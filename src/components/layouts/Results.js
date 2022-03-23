@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Consumer, Context } from "../../context";
+import { Context } from "../../context";
 import MovieCard from "../tracks/Movie"
 import { Box, Text, VStack, HStack, Heading } from "@chakra-ui/react"
 
@@ -21,8 +21,8 @@ const Results = () => {
                 <Box w={"fit-content"} minWidth="100%" h="349px">
                     <Text>Series</Text>
                     <HStack overflowX="scroll">
-                    {movieList.Response === "True" && movieList.Search.map((movie) => <MovieCard movie={movie} />)}
-                    {movieList.Error === "Movie not found!" && <Heading color="red"> {movieList.Error} </Heading>}
+                        {movieList.Response === "True" && movieList.Search.map((movie) => <MovieCard movie={movie} />)}
+                        {movieList.Error === "Movie not found!" && <Heading color="red"> {movieList.Error} </Heading>}
                     </HStack>
                 </Box>
             </VStack>

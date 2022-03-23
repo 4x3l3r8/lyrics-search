@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Box, Text, Input } from "@chakra-ui/react";
-import { Consumer, Context } from '../../context'
+import { Context } from '../../context'
 import Axios from 'axios'
 
 const Search = () => {
