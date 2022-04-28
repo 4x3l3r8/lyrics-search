@@ -1,1 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans');
+
+
+
+.myWorkContent{
+    width:100%;
+    /* height:210px; */
+    /* border: 13px solid #bee5cd; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
