@@ -5,8 +5,7 @@ import Axios from 'axios'
 
 const Search = () => {
     const [searchQuery, setSearchQuery] = useState("");
-    const { updateMovieList } = useContext(Context)
-    const { updateSeriesList } = useContext(Context)
+    const { updateMovieList, updateSeriesList } = useContext(Context)
 
     useEffect(() => {
         if (searchQuery.length >= 3) {
